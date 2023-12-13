@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Poppins";
+      }
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        font-family: "Poppins";
+      }
+      body {
+        background-color: #ececec;
+      }
+      h1 {
+        text-align: center;
+        margin-top: 10%;
+      }
+      .cont-area {
+        height: 400px;
+        width: 100%;
+        background-color: rgb(150, 127, 127);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .cont-area .mail h3 {
+        margin-top: 20px;
+        letter-spacing: 3px;
+      }
+      .cont-area .mail h3 a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        transition: 0.5s ease;
+      }
+      .cont-area .mail h3 a:hover {
+        text-decoration: underline;
+        color: rgb(20, 20, 165);
+        font-size: 25px;
+      }
+      .cont-area .phone h3 {
+        margin-top: 20px;
+        letter-spacing: 3px;
+      }
+      .cont-area .phone h3 a {
+        color: black;
+        text-decoration: none;
+        font-size: 20px;
+        transition: 0.5s ease;
+      }
+      .cont-area .phone h3 a:hover {
+        text-decoration: underline;
+        color: rgb(20, 20, 165);
+        font-size: 25px;
+      }
+      .cont-area .address h3 {
+        margin-top: 20px;
+        letter-spacing: 3px;
+        font-size: 20px;
+        transition: 0.5s ease;
+      }
+      .cont-area .address h3:hover {
+        font-size: 25px;
+      }
+      @media screen and (max-width: 768px) {
+        h1 {
+          margin-top: 15%;
+          font-size: 24px;
+        }
+
+        .cont-area {
+          height: auto;
+          padding: 20px;
+        }
+
+        .cont-area .mail h3,
+        .cont-area .phone h3,
+        .cont-area .address h3 {
+          font-size: 16px;
+          letter-spacing: 2px;
+          transition: none;
+          margin-top: 15px;
+        }
+
+        .cont-area .mail h3 a,
+        .cont-area .phone h3 a {
+          font-size: 18px;
+        }
+
+        .cont-area .mail h3 a:hover,
+        .cont-area .phone h3 a:hover {
+          font-size: 20px;
+        }
+
+        .cont-area .address h3:hover {
+          font-size: 22px;
+        }
+      }
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+        height: 80px;
+        margin: 0 auto;
+      }
+      nav img {
+        width: 110px;
+      }
+      nav #links {
+        display: flex;
+        align-items: center;
+      }
+      nav #links a {
+        margin-left: 50px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 14px;
+        color: black;
+        opacity: 0.7;
+        letter-spacing: 4px;
+        font-weight: 600;
+      }
+
+      nav #links i {
+        margin-left: 50px;
+      }
+      nav #links a:nth-child(2) {
+        opacity: 0.2;
+      }
+      nav #links a:nth-child(3) {
+        opacity: 0.2;
+      }
+      nav #links a:nth-child(4) {
+        opacity: 0.2;
+      }
+      nav #links a:hover {
+        color: black;
+        opacity: 1;
+        border-bottom: 2px solid black;
+      }
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+      }
+
+      .footer-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .footer-content p {
+        margin: 0;
+        font-size: 14px;
+      }
+
+      .footer-links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .footer-links li {
+        display: inline;
+        margin-right: 20px;
+      }
+
+      .footer-links li:last-child {
+        margin-right: 0;
+      }
+
+      .footer-links a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      .footer-links a:hover {
+        color: #f0f0f0;
+      }
+      @media screen and (max-width: 768px) {
+        .footer-content {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .footer-links li {
+          display: block;
+          margin-bottom: 10px;
+        }
+      }
+    </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <img src="images/Tahir.png" alt="img" />
+      <div id="links">
+        <a href="index.html">Home</a>
+        <a href="contact..html" target="_blank">Contact</a>
+        <a href="cert.html">Acheivements</a>
+        <a href="projects.html">Projects</a>
+        <i class="ri-search-line"></i>
+        <i class="ri-menu-line" id="menu"></i>
+      </div>
+    </nav>
+    <h1>Come in Contact!</h1>
+    <div class="cont-area">
+      <div class="mail">
+        <h3>Email : <a href="mailto:">hmtahirhassan@gmail.com</a></h3>
+      </div>
+      <div class="phone">
+        <h3>Phone : <a href="tel:+">+92 337 8619 867</a></h3>
+      </div>
+      <div class="address">
+        <h3>Address : H#190/A, St.29, Lakhoder Road, Shalimar Town, Lahore</h3>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2023 Hafiz Muhammad Tahir</p>
+        <ul class="footer-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
