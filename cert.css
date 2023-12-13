@@ -36,6 +36,36 @@ h1 {
     padding: 8px;
     font-size: 25px;
 }
+@media screen and (max-width: 768px) {
+  h1 {
+    margin-top: 50px;
+    font-size: 24px;
+  }
+
+  .show-case {
+    height: auto;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .show-case img {
+    width: 80%;
+    max-width: 300px;
+    margin-top: 30px;
+  }
+
+  .show-case img:hover {
+    transform: scale(1.2);
+    transition: transform 0.5s ease-in-out;
+    margin-top: 50px;
+  }
+
+  .show-case h4 {
+    font-size: 18px;
+  }
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -78,6 +108,23 @@ nav #links a:hover {
   color: black;
   opacity: 1;
   border-bottom: 2px solid black;
+}
+@media screen and (max-width: 768px), (max-width:650px) {
+  nav {
+    width: 80%;
+    height: 60px;
+    margin: 0 auto;
+  }
+
+  nav img {
+    width: 60px;
+  }
+
+  nav #links a {
+    margin-left: 10px;
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
 }
 footer {
   background-color: #333;
