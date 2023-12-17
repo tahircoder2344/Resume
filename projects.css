@@ -1,161 +1,136 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins';
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
 }
 
-h1{
-    text-align: center;
-    margin-top: 50px;
-}
-.projects{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.git-proj-1{
-    height: 100vh;
-    width: 25%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-/*     background-color: red; */
-}
-.git-proj-1 .prj-1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 500px;
-    width: 500px;
-    background-color: black;
-    color: white;
-    flex-direction: column;
-    border-radius: 20px;
-}
-.git-proj-2{
-    height: 100vh;
-    width: 25%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    /* background-color: red; */
-}
-.git-proj-2 .prj-2{
-    height: 50vh;
-    width: 98%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: black;
-    color: white;
-    border-radius: 20px;
-
-}
-.git-proj-1 .prj-1 a{
-    font-size: 30px;
-    text-decoration: none;
-    color: red;
-}
-.git-proj-1 .prj-1 a:hover{
-    color: blue;
-    text-decoration: underline;
+h1 {
+  text-align: center;
+  margin-top: 50px;
 }
 
-.git-proj-2 .prj-2 a{
-    font-size: 30px;
-    text-decoration: none;
-    color: red;
+.projects {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.git-proj-2 .prj-2 a:hover{
-    color: blue;
-    text-decoration: underline;
+
+.git-proj-1,
+.git-proj-2 {
+  height: 100vh;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.git-proj-1 .prj-1,
+.git-proj-2 .prj-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+}
+
+.git-proj-1 .prj-1 a,
+.git-proj-2 .prj-2 a {
+  font-size: 30px;
+  text-decoration: none;
+  color: red;
+}
+
+.git-proj-1 .prj-1 a:hover,
+.git-proj-2 .prj-2 a:hover {
+  color: blue;
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 768px) {
-    h1 {
-      margin-top: 30px;
-      font-size: 24px;
-    }
-  
-    .projects {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .git-proj-1,
-    .git-proj-2 {
-      width: 100%;
-      height: auto;
-      margin-bottom: 20px;
-    }
-  
-    .git-proj-1 .prj-1,
-    .git-proj-2 .prj-2 {
-      width: 90%;
-      height: auto;
-      max-width: 90%;
-      padding: 20px;
-    }
-  
-    .git-proj-1 .prj-1 a,
-    .git-proj-2 .prj-2 a {
-      font-size: 18px;
-    }
+  h1 {
+    margin-top: 30px;
+    font-size: 24px;
   }
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 90%;
-    height: 80px;
-    margin: 0 auto;
-  }
-  nav img {
-    width: 110px;
-  }
-  nav #links {
-    display: flex;
-    align-items: center;
-  }
-  nav #links a {
-    margin-left: 50px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 14px;
-    color: black;
-    opacity: 0.7;
-    letter-spacing: 4px;
-    font-weight: 600;
-  }
-  
-  
-  nav #links i {
-    margin-left: 50px;
-  }
-  nav #links a:nth-child(2) {
-    opacity: 0.2;
-  }
-  nav #links a:nth-child(3) {
-    opacity: 0.2;
-  }
-  nav #links a:nth-child(4) {
-    opacity: 0.2;
-  }
-  nav #links a:hover{
-    color: black;
-    opacity: 1;
-    border-bottom: 2px solid black;
-  
-  }
-  @media screen and (max-width: 768px), (max-width:650px) {
 
+  .projects {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .git-proj-1,
+  .git-proj-2 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .git-proj-1 .prj-1,
+  .git-proj-2 .prj-2 {
+    width: 90%;
+    height: auto;
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  .git-proj-1 .prj-1 a,
+  .git-proj-2 .prj-2 a {
+    font-size: 18px;
+  }
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  height: 80px;
+  margin: 0 auto;
+}
+
+nav img {
+  width: 110px;
+}
+
+nav #links {
+  display: flex;
+  align-items: center;
+}
+
+nav #links a {
+  margin-left: 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: black;
+  opacity: 0.7;
+  letter-spacing: 4px;
+  font-weight: 600;
+}
+
+nav #links i {
+  margin-left: 50px;
+}
+
+nav #links a:nth-child(2),
+nav #links a:nth-child(3),
+nav #links a:nth-child(4) {
+  opacity: 0.2;
+}
+
+nav #links a:hover {
+  color: black;
+  opacity: 1;
+  border-bottom: 2px solid black;
+}
+
+@media screen and (max-width: 768px),
+(max-width: 650px) {
   nav {
     width: 80%;
     height: 60px;
@@ -172,6 +147,7 @@ nav {
     letter-spacing: 1px;
   }
 }
+
 footer {
   background-color: #333;
   color: #fff;
@@ -216,6 +192,7 @@ footer {
 .footer-links a:hover {
   color: #f0f0f0;
 }
+
 @media screen and (max-width: 768px) {
   .footer-content {
     flex-direction: column;
