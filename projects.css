@@ -18,7 +18,13 @@ h1{
     flex-wrap: wrap;
 }
 .git-proj-1{
-
+    height: 100vh;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+/*     background-color: red; */
 }
 .git-proj-1 .prj-1{
     display: flex;
