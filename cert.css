@@ -1,71 +1,74 @@
+/* Font import and global styles */
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
+/* Global reset and font */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
 }
+
+/* General styling */
 h1 {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 100px; /* Adjusted margin for spacing */
 }
-.show-case {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 100px;
-  background-color: rgb(204, 195, 195);
-  width: 100%;
-  height: 700px;
-}
-.show-case img {
-  width: 400px;
-  border: 8px solid rgb(255, 255, 255);
-  margin-top: 50px;
-}
-.show-case img:hover {
-  scale: 1.5;
-  transition: 0.5s ease-in-out;
-  margin-top: 100px;
-}
-#pic2 {
-  width: 400px;
-}
-.show-case h4{
-    padding: 8px;
-    font-size: 25px;
-}
-@media screen and (max-width: 768px) {
-  h1 {
-    margin-top: 50px;
-    font-size: 24px;
-  }
 
+/* Image showcase */
+.show-case {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+  background-color: rgb(204, 195, 195);
+  padding: 50px;
+}
+
+.show-case img {
+  width: 100%;
+  max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  border: 8px solid rgb(255, 255, 255);
+  transition: transform 0.5s ease-in-out, margin-top 0.5s ease-in-out;
+}
+
+.show-case img:hover {
+  transform: scale(1.6);
+  margin-top: 10px;
+}
+
+/* Certificate description */
+.show-case h4 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
   .show-case {
-    height: auto;
     padding: 20px;
-    flex-direction: column;
-    align-items: center;
   }
 
   .show-case img {
     width: 80%;
     max-width: 300px;
-    margin-top: 30px;
   }
 
   .show-case img:hover {
-    transform: scale(1.2);
-    transition: transform 0.5s ease-in-out;
-    margin-top: 50px;
+    transform: scale(1.05);
+    margin-top: 10px;
   }
 
   .show-case h4 {
-    font-size: 18px;
+    font-size: 1em;
   }
 }
 
+
+/* Navigation styling */
 nav {
   display: flex;
   align-items: center;
@@ -74,13 +77,16 @@ nav {
   height: 80px;
   margin: 0 auto;
 }
+
 nav img {
   width: 110px;
 }
+
 nav #links {
   display: flex;
   align-items: center;
 }
+
 nav #links a {
   margin-left: 50px;
   text-decoration: none;
@@ -92,24 +98,21 @@ nav #links a {
   font-weight: 600;
 }
 
-nav #links i {
-  margin-left: 50px;
-}
-nav #links a:nth-child(2) {
-  opacity: 0.2;
-}
-nav #links a:nth-child(3) {
-  opacity: 0.2;
-}
+/* Navigation links on hover */
+nav #links a:nth-child(2),
+nav #links a:nth-child(3),
 nav #links a:nth-child(4) {
   opacity: 0.2;
 }
+
 nav #links a:hover {
   color: black;
   opacity: 1;
   border-bottom: 2px solid black;
 }
-@media screen and (max-width: 768px), (max-width:650px) {
+
+/* Responsive navigation for smaller screens */
+@media screen and (max-width: 768px), (max-width: 650px) {
   nav {
     width: 80%;
     height: 60px;
@@ -126,6 +129,8 @@ nav #links a:hover {
     letter-spacing: 1px;
   }
 }
+
+/* Footer styling */
 footer {
   background-color: #333;
   color: #fff;
@@ -170,6 +175,8 @@ footer {
 .footer-links a:hover {
   color: #f0f0f0;
 }
+
+/* Responsive footer for smaller screens */
 @media screen and (max-width: 768px) {
   .footer-content {
     flex-direction: column;
